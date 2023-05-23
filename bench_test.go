@@ -1,3 +1,4 @@
+//go:build go1.7
 // +build go1.7
 
 package errors
@@ -41,7 +42,7 @@ func BenchmarkErrors(b *testing.B) {
 		{1000, true},
 	}
 	for _, r := range runs {
-		part := "pkg/errors"
+		part := "chigopher/errors"
 		if r.std {
 			part = "errors"
 		}
